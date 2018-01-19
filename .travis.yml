@@ -1,9 +1,4 @@
 language: android
-sudo: required
-before_install:
-- chmod +x gradlew
-script:
-- ./gradlew clean build -i --continue
 android:
   components:
     - build-tools-26.0.2
@@ -11,7 +6,7 @@ android:
     - sys-img-armeabi-v7a-android-tv-l
     - add-on
     - extra
-    licenses:
+  licenses:
     - 'android-sdk-preview-license-52d11cd2'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
